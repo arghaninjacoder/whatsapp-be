@@ -1,17 +1,17 @@
-import express from "express";
-import trimRequest from "trim-request";
+import express from "express"
+import trimRequest from "trim-request"
 import {
   register,
   login,
   logout,
   refreshToken,
-} from "../controllers/auth.controller.js";
+} from "../controllers/auth.controller.js"
 
-const router = express.Router();
+const router = express.Router()
 
-router.route("/register").post(trimRequest.all, register);
-router.route("/login").post(trimRequest.all, login);
-router.route("/logout").post(trimRequest.all, logout);
-router.route("/refreshToken").post(trimRequest.all, refreshToken);
+router.route("/register").post(trimRequest.all, register)
+router.route("/login").post(trimRequest.all, login)
+router.route("/logout").post(trimRequest.all, logout)
+router.route("/refreshtoken").post(trimRequest.all, refreshToken)
 
-export default router;
+export default router
