@@ -55,6 +55,9 @@ export const createUser = async (userData) => {
     )
   }
 
+  // hash password ---> to be done in user modal
+
+  // adding user to database
   const user = await new UserModel({
     name,
     email,
